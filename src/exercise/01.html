@@ -2,7 +2,10 @@
 <!-- http://localhost:3000/isolated/exercise/01.html -->
 
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
+  <body>
+  </body>
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
+
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
 <!--   📜 https://github.com/mdn/js-examples/tree/master/modules -->
@@ -17,3 +20,12 @@
 <!-- 🐨 Append the div to the root div using `append` -->
 <!--   💰 document.getElementById('root') -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+<script type="module">
+  const root = document.createElement('div');
+  const element = document.createElement('div');
+  root.id = 'root';
+  element.textContent = 'Hello World';
+  element.className = 'container';
+  document.body.append(root);
+  root.append(element);
+</script>
